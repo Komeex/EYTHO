@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </head>
+  <body class="bg-gray-700 text-white">
+    <header class="bg-gray-900">
+      <nav
+        class="flex items-center justify-center md:justify-between h-24 w-[95%] lg:w-[90%] mx-auto"
+      >
+        <div
+          onclick="oneToggleMenu(this)"
+          name="menu"
+          class="flex items-center text-2xl font-semibold text-[#FF6600] md-center cursor-pointer md:cursor-pointer-none"
+          alt="..."
+        >
+          <img class="w-8 md:w-10" src="assets/Ezzy.png" alt="" />
+          <h1 class="">EYTHO 2026</h1>
+        </div>
+        <div
+          class="nav-links md:static md:min-h-fit absolute bg-gray-900 md:bg-transparent min-h-[40vh] left-0 top-[-100%] w-full flex items-center md:w-auto px-8 justify-center text-center transition-all duration-500 ease-in-out"
+        >
+          <ul
+            class="flex md:flex-row flex-col md:items-center md:gap-[2vw] lg:gap-[4vw] gap-8"
+          >
+            <li>
+              <a
+                class="underline1 hover:text-[#FF6600] duration-300 pb-2"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="underline1 hover:text-[#FF6600] duration-300 pb-2"
+                href="#"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a
+                class="underline1 hover:text-[#FF6600] duration-300 pb-2"
+                href="#"
+                >Competition</a
+              >
+            </li>
+            <li>
+              <a
+                class="underline1 hover:text-[#FF6600] duration-300 pb-2"
+                href="#"
+                >Location</a
+              >
+            </li>
+            <li>
+              <a
+                class="underline1 hover:text-[#FF6600] duration-300 pb-2"
+                href="#"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="hidden md:flex">
+          <button
+            class="bg-[#FF6600] rounded px-8 py-2 hover:scale-125 duration-300"
+          >
+            <h1>Daftar</h1>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <div class="pt-48">
+      <div class="flex flex-wrap justify-center items-center gap-8">
+        <div class="text-right">
+          <h2>English Department</h2>
+          <p>SMA/SMK</p>
+          <h2>House Skeeping Department</h2>
+          <p>SMA/SMK</p>
+          <p>Umum/Hotelier</p>
+          <h2>Business Department</h2>
+          <p>SMA/SMK</p>
+          <p>SMA/SMK</p>
+        </div>
+        <div>
+          <img class="w-80 mx-24" src="assets/EYTHOlogo.png" alt="">
+        </div>
+        <div>
+          <h2>Food & Beverage Department</h2>
+          <p>SMA/SMK</p>
+          <h2>Front Office Department</h2>
+          <p>SMA/SMK</p>
+          <p>Umum/Hotelier</p>
+          <h2>Culinary Department</h2>
+          <p>SMA/SMK</p>
+          <p>Umum/Hotelier</p>
+          <h2>Creative& Digital Marketing</h2>
+          <p>SMA/SMK</p>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+    <script>
+      const navLinks = document.querySelector(".nav-links");
+      function oneToggleMenu(e) {
+        navLinks.classList.toggle("top-[9%]");
+      }
+    </script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

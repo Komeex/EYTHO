@@ -1,12 +1,12 @@
 * {
     scroll-behavior: smooth;
-    font-family: "Plus Jakarta Sans", serif;
+    font-family: sans-serif;
   }
   
   .underline1 {
     position: relative;
     text-decoration: none;
-    color: rgb(255, 255, 255); /* Sesuaikan warna teks */
+    color: rgb(0, 0, 0); /* Sesuaikan warna teks */
   }
   
   .underline1::after {
@@ -16,7 +16,7 @@
     left: 0;
     width: 0;
     height: 2px;
-    background-color: rgb(255, 255, 255); /* Warna underline */
+    background-color: rgb(255, 0, 0); /* Warna underline */
     transition: width 0.3s ease-in-out;
   }
   
@@ -29,3 +29,4 @@
     color: yellow; /* Warna teks untuk link aktif */
   }
   
+

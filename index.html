@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -101,7 +102,7 @@
   
 
 
-  <div class="container mx-auto px-4 py-8 mt-16">
+  <div class="container mx-auto px-4 py-8 mt-16" >
       <div class="flex flex-col lg:flex-row items-center gap-6 mb-8">
 
         <div class="flex flex-col items-center lg:items-left justify-start gap-8 w-full lg:w-1/2 lg:hidden ">
@@ -116,20 +117,24 @@
                   With a prize pool of <span class="font-semibold">IDR 619,787,000</span>, EYTHO 2025 offers the chance to achieve your dreams. Compete, shine, and let your talents soar!
               </p>
           </div>  
-          <div class="flex lg:hidden py-8 gap-12 text-orange-600 "> 
-            <div class="text-left ">
-                <div class="text-5xl text-left">10+</div>
-                <div class="text-gray-700 font-medium">Categories</div>
+          <div class="flex justify-around gap-4 md:gap-8 lg:hidden flex">
+            <div class="bg-white/5 p-4 md:p-8 rounded-2xl backdrop-blur-sm text-center">
+                <h4 class="text-2xl md:text-4xl font-bold mb-1 md:mb-2 stat-number" data-target="150">
+                    0
+                </h4>
+                <p class="text-sm md:text-lg opacity-70">Projects Completed</p>
             </div>
-        
-            <div class="text-left ">
-                <div class="text-5xl ">2M</div>
-                <div class="text-gray-700 font-medium">Total Prize</div>
+            <div class="bg-white/5 p-4 md:p-8 rounded-2xl backdrop-blur-sm text-center">
+                <h4 class="text-2xl md:text-4xl font-bold mb-1 md:mb-2 stat-number" data-target="100">
+                    0
+                </h4>
+                <p class="text-sm md:text-lg opacity-70">Happy Clients</p>
             </div>
-
-            <div class="text-left ">
-                <div class="text-5xl ">12+</div>
-                <div class="text-gray-700 font-medium">Participants</div>
+            <div class="bg-white/5 p-4 md:p-8 rounded-2xl backdrop-blur-sm text-center">
+                <h4 class="text-2xl md:text-4xl font-bold mb-1 md:mb-2 stat-number" data-target="10">
+                    0
+                </h4>
+                <p class="text-sm md:text-lg opacity-70">Years Experience</p>
             </div>
         </div>     
       </div>
@@ -163,42 +168,231 @@
                     With a prize pool of <span class="font-semibold">IDR 619,787,000</span>, EYTHO 2025 offers the chance to achieve your dreams. Compete, shine, and let your talents soar!
                 </p>
             </div>
-            <div class="hidden lg:flex py-4 lg:gap-12 text-orange-600 "> 
-              <div class="text-left ">
-                  <div class="text-5xl text-left">10+</div>
-                  <div class="text-gray-700 font-medium">Categories</div>
-              </div>
-          
-              <div class="text-left ">
-                  <div class="text-5xl ">2M</div>
-                  <div class="text-gray-700 font-medium">Total Prize</div>
-              </div>
-
-              <div class="text-left ">
-                  <div class="text-5xl ">12+</div>
-                  <div class="text-gray-700 font-medium">Participants</div>
-              </div>
-          </div>     
+        
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 lg:flex hidden">
+                    <div class="bg-white/5 p-4 md:p-8 rounded-2xl backdrop-blur-sm text-center">
+                        <h4 class="text-2xl md:text-4xl font-bold mb-1 md:mb-2 stat-number" data-target="150">
+                            0
+                        </h4>
+                        <p class="text-sm md:text-lg opacity-70">Projects Completed</p>
+                    </div>
+                    <div class="bg-white/5 p-4 md:p-8 rounded-2xl backdrop-blur-sm text-center">
+                        <h4 class="text-2xl md:text-4xl font-bold mb-1 md:mb-2 stat-number" data-target="100">
+                            0
+                        </h4>
+                        <p class="text-sm md:text-lg opacity-70">Happy Clients</p>
+                    </div>
+                    <div class="bg-white/5 p-4 md:p-8 rounded-2xl backdrop-blur-sm text-center">
+                        <h4 class="text-2xl md:text-4xl font-bold mb-1 md:mb-2 stat-number" data-target="10">
+                            0
+                        </h4>
+                        <p class="text-sm md:text-lg opacity-70">Years Experience</p>
+                    </div>
+                </div>
+            </div>     
         </div>
 
       </div>
   </div>
 </div>
 
-<div class=" object-cover items-center flex justify-center my-24 md:my-12">
-<img src="assets/franchise-desktop-a-scaled 1.png " class="md:flex hidden lg:w-screen lg:px-20 h-auto flex " alt="">
-<img src="assets/franchise-mobile-a.jpg" class="md:hidden flex w-full h-auto flex " alt="">
+
+<div class="py-24">
+    <img src="assets/franchise-mobile-a.jpg" class="w-screen object-cover md:hidden flex">
+    <img src="assets/franchise-desktop-a-scaled 1.png" class="w-screen object-cover md:flex hidden">
 </div>
 
+<h1 class="text-4xl font-bold text-center mb-24">COMPETITION</h1>
+
+  <div class="text-xl mb-6 mx-12">Category SMA/SMK </div>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mx-12 mb-12">
+      <!-- Housekeeping Card -->
+      <div class="bg-[#ff7849] rounded-lg p-6 text-white px-4 mb:px-12">
+          <div class="flex items-center my-4">
+            <img src="assets/englise comp.png" alt="">
+          </div>
+          <h2 class="text-2xl font-semibold mb-4 ">English Competition</h2>
+          <div class="border-b-2 mb-4"></div>
+          <div class="space-y-3">
+
+              <a href="#" class="group flex items-center justify-between hover:bg-white/20 p-2 hover:scale-105  rounded transition">
+                Essay Poster Competition
+                  <ion-icon class="text-3xl -rotate-45 hover:rotate-0 group--rotate-45 group-hover:rotate-0 transition duration-300" name="arrow-forward-outline"></ion-icon>
+              </a>
+              <a href="#" class="group flex items-center justify-between hover:bg-white/20 p-2 hover:scale-105  rounded transition">
+                Speech Competition
+                  <ion-icon class="text-3xl -rotate-45 hover:rotate-0 group--rotate-45 group-hover:rotate-0 transition duration-300" name="arrow-forward-outline"></ion-icon>
+              </a>
+          </div>
+      </div>
+
+      <!-- F&B Card -->
+      <div class="bg-gray-200 rounded-lg p-6 px-4 mb:px-12">
+          <div class="flex items-center my-4">
+            <img src="assets/business comp.png" alt=""> 
+          </div>
+          <h2 class="text-2xl font-semibold mb-4">Business Competition</h2>
+          <div class="border-b-2 border-black mb-4"></div>
+          <div class="space-y-3">
+              <a href="#" class="group flex items-center justify-between hover:bg-white/20 p-2 hover:scale-105  rounded transition">
+                Business Plan Competition
+                  <ion-icon class="text-3xl -rotate-45 hover:rotate-0 group--rotate-45 group-hover:rotate-0 transition duration-300" name="arrow-forward-outline"></ion-icon>
+              </a>
+            
+             
+          </div>
+      </div>
+
+      <!-- Front Office Card -->
+      <div class="bg-[#ff7849] rounded-lg p-6 text-white px-4 mb:px-12">
+          <div class="flex items-center my-4">
+            <img src="assets/IT comp.png" alt="">
+          </div>
+          <h2 class="text-2xl font-semibold mb-4">IT Competition</h2>
+          <div class="border-b-2 border-white mb-4"></div>
+          <div class="space-y-3">
+              <a href="#" class="group flex items-center justify-between hover:bg-white/20 p-2 hover:scale-105  rounded transition">
+                E-Sport Pro Evolution Soccer (PES) Competition
+                  <ion-icon class="text-3xl -rotate-45 hover:rotate-0 group--rotate-45 group-hover:rotate-0 transition duration-300" name="arrow-forward-outline"></ion-icon>
+              </a>
+              <a href="#" class="group flex items-center justify-between hover:bg-white/20 p-2 hover:scale-105  rounded transition">
+                WebCraft – Web Design Competition
+                  <ion-icon class="text-3xl -rotate-45 hover:rotate-0 group--rotate-45 group-hover:rotate-0 transition duration-300" name="arrow-forward-outline"></ion-icon>
+              </a>
+          </div>
+      </div>
+
+      <!-- Culinary Card -->
+      <div class="bg-gray-200 rounded-lg p-6 px-4 mb:px-12">
+          <div class="flex items-center my-4">
+              <img src="assets/Digital marketing comp.png" alt="">
+          </div>
+          <h2 class="text-2xl font-semibold mb-4">Creative & Digital Marketing  </h2>
+          <div class="border-b-2 border-black mb-4"></div>
+          <div class="space-y-3">
+              <a href="#" class="group flex items-center justify-between hover:bg-white/20 p-2 hover:scale-105  rounded transition">
+                Mobile Photography Contest
+                  <ion-icon class="text-3xl -rotate-45 hover:rotate-0 group--rotate-45 group-hover:rotate-0 transition duration-300" name="arrow-forward-outline"></ion-icon>
+              </a>
+              <a href="#" class="group flex items-center justify-between hover:bg-white/20 p-2 hover:scale-105  rounded transition">
+                Reels Competition
+                  <ion-icon class="text-3xl -rotate-45 hover:rotate-0 group--rotate-45 group-hover:rotate-0 transition duration-300" name="arrow-forward-outline"></ion-icon>
+              </a>
+              
+          </div>
+      </div>
+  </div>
+
+  <div class="border-b-2 mx-12 border-black"></div>
+  <div class="text-xl my-6 mx-12">Category SMA/SMK &amp; UMUM/Hotlier</div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mx-12 ">
+      <!-- Housekeeping Card -->
+      <div class="bg-[#ff7849] rounded-lg p-6 text-white px-4 mb:px-12">
+          <div class="flex items-center my-4">
+            <img src="assets/Housekeeping.png" alt="">
+          </div>
+          <h2 class="text-2xl font-semibold mb-4 ">Housekeeping Competition</h2>
+          <div class="border-b-2 mb-4"></div>
+          <div class="space-y-3">
+
+              <a href="#" class="group flex items-center justify-between hover:bg-white/20 p-2 hover:scale-105  rounded transition">
+                  Making Bed Competition
+                  <ion-icon class="text-3xl -rotate-45 hover:rotate-0 group--rotate-45 group-hover:rotate-0 transition duration-300" name="arrow-forward-outline"></ion-icon>
+              </a>
+              <a href="#" class="group flex items-center justify-between hover:bg-white/20 p-2 hover:scale-105  rounded transition">
+                  Creative Towel Arts Competition
+                  <ion-icon class="text-3xl -rotate-45 hover:rotate-0 group--rotate-45 group-hover:rotate-0 transition duration-300" name="arrow-forward-outline"></ion-icon>
+              </a>
+              <a href="#" class="group flex items-center justify-between hover:bg-white/20 p-2 hover:scale-105  rounded transition">
+                  Creative Making Bed Competition
+                  <ion-icon class="text-3xl -rotate-45 hover:rotate-0 group--rotate-45 group-hover:rotate-0 transition duration-300" name="arrow-forward-outline"></ion-icon>
+              </a>
+          </div>
+      </div>
+
+      <!-- F&B Card -->
+      <div class="bg-gray-200 rounded-lg p-6 px-4 mb:px-12">
+          <div class="flex items-center my-4">
+            <img src="assets/Food & Beverage.png" alt=""> 
+          </div>
+          <h2 class="text-2xl font-semibold mb-4">Food &amp; Beverage Competition</h2>
+          <div class="border-b-2 border-black mb-4"></div>
+          <div class="space-y-3">
+              <a href="#" class="group flex items-center justify-between hover:bg-white/20 p-2 hover:scale-105  rounded transition">
+                  Barista Open Service Competition
+                  <ion-icon class="text-3xl -rotate-45 hover:rotate-0 group--rotate-45 group-hover:rotate-0 transition duration-300" name="arrow-forward-outline"></ion-icon>
+              </a>
+              <a href="#" class="group flex items-center justify-between hover:bg-white/20 p-2 hover:scale-105  rounded transition">
+                  MixoFlair &amp; Accuration Competition
+                  <ion-icon class="text-3xl -rotate-45 hover:rotate-0 group--rotate-45 group-hover:rotate-0 transition duration-300" name="arrow-forward-outline"></ion-icon>
+              </a>
+              <a href="#" class="group flex items-center justify-between hover:bg-white/20 p-2 hover:scale-105  rounded transition">
+                  Creative Table Setup Competition
+                  <ion-icon class="text-3xl -rotate-45 hover:rotate-0 group--rotate-45 group-hover:rotate-0 transition duration-300" name="arrow-forward-outline"></ion-icon>
+              </a>
+          </div>
+      </div>
+
+      <!-- Front Office Card -->
+      <div class="bg-[#ff7849] rounded-lg p-6 text-white px-4 mb:px-12">
+          <div class="flex items-center my-4">
+            <img src="assets/FO.png" alt="">
+          </div>
+          <h2 class="text-2xl font-semibold mb-4">Front Office Competition</h2>
+          <div class="border-b-2 border-white mb-4"></div>
+          <div class="space-y-3">
+              <a href="#" class="group flex items-center justify-between hover:bg-white/20 p-2 hover:scale-105  rounded transition">
+                  Receptionist Competition - SMA/SMK
+                  <ion-icon class="text-3xl -rotate-45 hover:rotate-0 group--rotate-45 group-hover:rotate-0 transition duration-300" name="arrow-forward-outline"></ion-icon>
+              </a>
+              <a href="#" class="group flex items-center justify-between hover:bg-white/20 p-2 hover:scale-105  rounded transition">
+                  Receptionist Competition - Umum/Hotlier
+                  <ion-icon class="text-3xl -rotate-45 hover:rotate-0 group--rotate-45 group-hover:rotate-0 transition duration-300" name="arrow-forward-outline"></ion-icon>
+              </a>
+              <a href="#" class="group flex items-center justify-between hover:bg-white/20 p-2 hover:scale-105  rounded transition">
+                  Tour Guiding Competition
+                  <ion-icon class="text-3xl -rotate-45 hover:rotate-0 group--rotate-45 group-hover:rotate-0 transition duration-300" name="arrow-forward-outline"></ion-icon>
+              </a>
+          </div>
+      </div>
+
+      <!-- Culinary Card -->
+      <div class="bg-gray-200 rounded-lg p-6 px-4 mb:px-12">
+          <div class="flex items-center my-4">
+              <img src="assets/kuliner.png" alt="">
+          </div>
+          <h2 class="text-2xl font-semibold mb-4">Culinary Competition</h2>
+          <div class="border-b-2 border-black mb-4"></div>
+          <div class="space-y-3">
+              <a href="#" class="group flex items-center justify-between hover:bg-white/20 p-2 hover:scale-105  rounded transition">
+                  Black Box Competition
+                  <ion-icon class="text-3xl -rotate-45 hover:rotate-0 group--rotate-45 group-hover:rotate-0 transition duration-300" name="arrow-forward-outline"></ion-icon>
+              </a>
+              <a href="#" class="group flex items-center justify-between hover:bg-white/20 p-2 hover:scale-105  rounded transition">
+                  Fruit Carving Competition
+                  <ion-icon class="text-3xl -rotate-45 hover:rotate-0 group--rotate-45 group-hover:rotate-0 transition duration-300" name="arrow-forward-outline"></ion-icon>
+              </a>
+              <a href="#" class="group flex items-center justify-between hover:bg-white/20 p-2 hover:scale-105  rounded transition">
+                  Main Course Competition
+                  <ion-icon class="text-3xl -rotate-45 hover:rotate-0 group--rotate-45 group-hover:rotate-0 transition duration-300" name="arrow-forward-outline"></ion-icon>
+              </a>
+              <a href="#" class="group flex items-center justify-between hover:bg-white/20 p-2 hover:scale-105  rounded transition">
+                  Dessert Competition
+                  <ion-icon class="text-3xl -rotate-45 hover:rotate-0 group--rotate-45 group-hover:rotate-0 transition duration-300" name="arrow-forward-outline"></ion-icon>
+              </a>
+          </div>
+      </div>
+  </div>
 
 
 
 
+    <footer class="w-screen h-screen bg-black mt-24">
 
+    </footer>
 
-
-
-    <footer></footer>
     <script>
       function Menu(e) {
           let list = document.querySelector('ul');
@@ -207,6 +401,9 @@
           list.classList.toggle('opacity-100');
       }
   </script>
-    <script src="scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.158.0/three.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
   </body>
 </html>

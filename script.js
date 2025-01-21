@@ -56,9 +56,40 @@ document.addEventListener("DOMContentLoaded", () => {
           counter.innerText = target; 
         }
       };
-  
       updateCounter();
     });
   });
   
-  
+
+// Detail JS
+    function switchTab(tabId) {
+        document.querySelectorAll('.tab-content').forEach(content => {
+            content.classList.add('hidden');
+        });
+        
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.classList.remove('border-orange-500');
+        });
+        
+        document.getElementById(tabId).classList.remove('hidden');
+        
+        event.currentTarget.classList.add('border-orange-500');
+    }
+
+    const scrollButton = document.getElementById('scrollTop');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabContents.forEach(content => {
+        content.addEventListener('scroll', () => {
+            if (content.scrollTop > 300) {
+                scrollButton.classList.remove('hidden');
+            } else {
+                scrollButton.classList.add('hidden');
+            }
+        });
+    });
+
+    scrollButton.addEventListener('click', () => {
+        const activeTab = document.querySelector('.tab-content:not(.hidden)');
+        activeTab.scrollTo({ top: 0, behavior: 'smooth' });
+    });

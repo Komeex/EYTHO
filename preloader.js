@@ -1,4 +1,4 @@
-// preloader
+
 setTimeout(() => {
     $(".overflow-preloader h1").addClass("active");
     setTimeout(() => {

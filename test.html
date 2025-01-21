@@ -2,66 +2,146 @@
 <html>
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
-</head>
-<body class="bg-gray-50">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white fixed top-0 left-0 w-full shadow-lg z-50">
+        <nav class="md:flex md:items-center md:justify-around py-4 md:h-24 w-full">
+            <div class="flex items-center justify-between font-semibold text-black mx-4 md:mx-0">
+                <img class="w-[11.5rem]" src="assets/logo-eytho-2026.png" alt="Logo Ezzy" />
+                <span class="text-3xl md:hidden">
+                    <ion-icon class="cursor-pointer" name="menu-outline" onclick="Menu(this)"></ion-icon>
+                </span>
+            </div>
+            <ul class="md:flex md:items-center gap-0 lg:gap-8 md:gap-0 md:static fixed bg-white w-full left-0 md:w-auto pl-4 md:pl-0
+             md:opacity-100 opacity-0 top-[-400px] transition-all ease-in-out  duration-500">
+                <li class="my-6 md:my-0">
+                    <a href="#" class="underline1 hover:text-[#FF6600] duration-300 block md:inline-block">Home</a>
+                </li>
+                <li class="my-6 md:my-0 md:ml-4">
+                    <a href="#about" class="underline1 hover:text-[#FF6600] duration-300 block md:inline-block">About us</a>
+                </li>
+  
+             <!-- Dropdown -->
+                <li class="relative my-6 md:my-0 md:ml-4">
+                  <button id="dropdown-trigger" class="group hover:text-[#FF6600] duration-300 block md:inline-block">Competition 
+                    <i class="fas fa-chevron-right group-hover:rotate-90 rotate-0 text-sm duration-300"></i></button>
+                  <div
+                    id="dropdown-menu"
+                    class="absolute left-1/2 -translate-x-1/2 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible transition-all duration-300 transform scale-95"
+                  >
+                    <ul class="py-1 text-sm text-gray-700">
+                      <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a href="#competition">English Competition</a></li>
+                      <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a href="#competition">Business Competition</a></li>
+                      <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a href="#competition">IT Competition</a></li>
+                      <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a href="#competition">Creative & Digital Marketing</a></li>
+                      <hr class="border-gray-200 my-1" />
+                      <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a href="#competition">Housekeeping Competition</a></li>
+                      <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a href="#competition">Food & Beverage Competition</a></li>
+                      <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a href="#competition">Front Office Competition</a></li>
+                      <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a href="#competition">Culinary Competition</a></li>
+                    </ul>
+                  </div>
+                </li>
+  
+                <div id="mobileDropdownMenu" class="hidden bg-gray-50 mt-2 rounded-md">
+                              <div class="py-1 pl-4">
+                                  <a href="#competition" class="block py-2 hover:text-orange-600">English Competition</a>
+                                  <a href="#competition" class="block py-2 hover:text-orange-600">Business Competition</a>
+                                  <a href="#competition" class="block py-2 hover:text-orange-600">IT Competition</a>
+                                  <a href="#competition" class="block py-2 hover:text-orange-600">Creative & Digital Marketing</a>
+                                  <a href="#competition" class="block py-2 hover:text-orange-600">Housekeeping Competition</a>
+                                  <a href="#competition" class="block py-2 hover:text-orange-600">Food & Beverage Competition</a>
+                                  <a href="#competition" class="block py-2 hover:text-orange-600">Front Office Competition</a>
+                                  <a href="#competition" class="block py-2 hover:text-orange-600">Culinary Competition</a>
+                              </div>
+                          </div>
+                      </div>
+  
+                <li class="my-6 md:my-0 md:ml-4">
+                    <a href="#location" class="underline1 hover:text-[#FF6600] duration-300 block md:inline-block">Location</a>
+                </li>
+                <li class="my-6 md:my-0 md:ml-4">
+                    <a href="#contact" class="underline1 hover:text-[#FF6600] duration-300 block md:inline-block">Contact us</a>
+                </li>
+                <li class="md:hidden pb-10">
+                    <button class="bg-[#FF6600] rounded px-4 py-2 hover:scale-110 duration-300 text-white">
+                        Pendaftaran
+                    </button>
+                </li>
+            </ul>
+            <div class="hidden md:block">
+              <button class="bg-[#FF6600] rounded px-4 py-2 hover:scale-110 duration-300 text-white">
+                Pendaftaran
+            </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="w-full h-[400px] bg-orange-600 mt-16 md:mt-24">
+        <div class="container mx-auto px-4 py-8 text-white">
+            <h1 class="text-4xl font-bold">Welcome</h1>
+            <p class="mt-4">Welcome to our website</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
     <main class="container mx-auto px-4 py-8">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <article class="lg:col-span-2">
-
-                <img src="assets/spech.jpg" alt="Blog Post Hero" class="w-full h-[400px] object-cover rounded-lg mb-8">
-
+            <!-- Article -->
+            <article class="lg:col-span-2 bg-white p-6 rounded-lg shadow-sm">
+                <img src="assets/spech.jpg" alt="Blog Post Hero" class="w-full h-[200px] md:h-[400px] object-cover rounded-lg mb-8">
                 
                 <div class="mb-6">
-                    <h1 class="text-3xl font-bold text-gray-900 mb-4">What Does it Work from Web?</h1>
-                    <div class="flex items-center gap-4 text-gray-600">
+                    <h1 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">What Does it Work from Web?</h1>
+                    <div class="flex flex-wrap gap-4 text-gray-600 text-sm md:text-base">
                         <span class="flex items-center gap-2">
                             <i class="far fa-calendar"></i>
-                            10 Jan, 2024
+                            14 Jan, 2025
                         </span>
                         <span class="flex items-center gap-2">
                             <i class="far fa-user"></i>
-                            John Doe
+                            Ezzy  
                         </span>
                     </div>
                 </div>
 
-                <!-- Article Content -->
                 <div class="prose max-w-none">
-                    
-
                     <p class="text-gray-700 mb-6">
                         The competition will consist of two rounds; Prepared Speech and Impromptu Speech.
                     </p>
-
-                  
-
                     <p class="text-gray-700 mb-6">
                         In the first round (Prepared Speech), participants must present their ideas in a standing position regarding the topic given using TedTalks style. Each participant is allowed to perform within 5-7 minutes.
                     </p>
-
                     <p class="text-gray-700">
-                        After the Prepared Speech, all participants must join the Impromptu Speech based on the lottery topic.                    </p>
+                        After the Prepared Speech, all participants must join the Impromptu Speech based on the lottery topic.
+                    </p>
                 </div>
             </article>
 
             <!-- Sidebar -->
-            <aside class="lg:col-span-1">
-
+            <aside class="lg:col-span-1 space-y-8">
                 <!-- Categories -->
-                <div class="bg-white p-6 rounded-lg shadow-sm mb-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
                     <h3 class="text-xl font-bold mb-4">Category</h3>
                     <ul class="space-y-3">
-                        <li class="flex items-center gap-2 text-gray-700 hover:text-blue-600">
-                            <i class="fas fa-circle text-blue-500 text-xs"></i>
+                        <li class="flex items-center gap-2 text-gray-700 hover:text-orange-600">
+                            <i class="fas fa-circle text-orange-500 text-xs"></i>
                             <a href="#">English Competition</a>
                         </li>
                     </ul>
                 </div>
 
-                <!-- Popular Posts -->
-                <div class="bg-white p-6 rounded-lg shadow-sm mb-8">
+                <!-- More Detail -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
                     <h3 class="text-xl font-bold mb-4">More Detail</h3>
                     <div class="space-y-4">
                         <a href="#" class="flex gap-4 group">
@@ -71,139 +151,7 @@
                                 <p class="text-sm text-gray-500">10 Jan, 2024</p>
                             </div>
                         </a>
-                        <a href="#" class="flex gap-4 group">
-                            <img src="/api/placeholder/80/80" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
-                            <div>
-                                <h4 class="font-medium text-gray-900 group-hover:text-blue-600">Lorem Ipsum is simply dummy</h4>
-                                <p class="text-sm text-gray-500">10 Jan, 2024</p>
-                            </div>
-                        </a>
-                        <a href="#" class="flex gap-4 group">
-                            <img src="/api/placeholder/80/80" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
-                            <div>
-                                <h4 class="font-medium text-gray-900 group-hover:text-blue-600">Lorem Ipsum is simply dummy</h4>
-                                <p class="text-sm text-gray-500">10 Jan, 2024</p>
-                            </div>
-                        </a>
-                        <a href="#" class="flex gap-4 group">
-                            <img src="/api/placeholder/80/80" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
-                            <div>
-                                <h4 class="font-medium text-gray-900 group-hover:text-blue-600">Lorem Ipsum is simply dummy</h4>
-                                <p class="text-sm text-gray-500">10 Jan, 2024</p>
-                            </div>
-                        </a>
-                        <a href="#" class="flex gap-4 group">
-                            <img src="/api/placeholder/80/80" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
-                            <div>
-                                <h4 class="font-medium text-gray-900 group-hover:text-blue-600">Lorem Ipsum is simply dummy</h4>
-                                <p class="text-sm text-gray-500">10 Jan, 2024</p>
-                            </div>
-                        </a>
-                        <a href="#" class="flex gap-4 group">
-                            <img src="/api/placeholder/80/80" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
-                            <div>
-                                <h4 class="font-medium text-gray-900 group-hover:text-blue-600">Lorem Ipsum is simply dummy</h4>
-                                <p class="text-sm text-gray-500">10 Jan, 2024</p>
-                            </div>
-                        </a>
-                        <a href="#" class="flex gap-4 group">
-                            <img src="/api/placeholder/80/80" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
-                            <div>
-                                <h4 class="font-medium text-gray-900 group-hover:text-blue-600">Lorem Ipsum is simply dummy</h4>
-                                <p class="text-sm text-gray-500">10 Jan, 2024</p>
-                            </div>
-                        </a>
-                        <a href="#" class="flex gap-4 group">
-                            <img src="/api/placeholder/80/80" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
-                            <div>
-                                <h4 class="font-medium text-gray-900 group-hover:text-blue-600">Lorem Ipsum is simply dummy</h4>
-                                <p class="text-sm text-gray-500">10 Jan, 2024</p>
-                            </div>
-                        </a>
-                        <a href="#" class="flex gap-4 group">
-                            <img src="/api/placeholder/80/80" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
-                            <div>
-                                <h4 class="font-medium text-gray-900 group-hover:text-blue-600">Lorem Ipsum is simply dummy</h4>
-                                <p class="text-sm text-gray-500">10 Jan, 2024</p>
-                            </div>
-                        </a>
-                        <a href="#" class="flex gap-4 group">
-                            <img src="/api/placeholder/80/80" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
-                            <div>
-                                <h4 class="font-medium text-gray-900 group-hover:text-blue-600">Lorem Ipsum is simply dummy</h4>
-                                <p class="text-sm text-gray-500">10 Jan, 2024</p>
-                            </div>
-                        </a>
-                        <a href="#" class="flex gap-4 group">
-                            <img src="/api/placeholder/80/80" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
-                            <div>
-                                <h4 class="font-medium text-gray-900 group-hover:text-blue-600">Lorem Ipsum is simply dummy</h4>
-                                <p class="text-sm text-gray-500">10 Jan, 2024</p>
-                            </div>
-                        </a>
-                        <a href="#" class="flex gap-4 group">
-                            <img src="/api/placeholder/80/80" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
-                            <div>
-                                <h4 class="font-medium text-gray-900 group-hover:text-blue-600">Lorem Ipsum is simply dummy</h4>
-                                <p class="text-sm text-gray-500">10 Jan, 2024</p>
-                            </div>
-                        </a>
-                        <a href="#" class="flex gap-4 group">
-                            <img src="/api/placeholder/80/80" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
-                            <div>
-                                <h4 class="font-medium text-gray-900 group-hover:text-blue-600">Lorem Ipsum is simply dummy</h4>
-                                <p class="text-sm text-gray-500">10 Jan, 2024</p>
-                            </div>
-                        </a>
-                        <a href="#" class="flex gap-4 group">
-                            <img src="/api/placeholder/80/80" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
-                            <div>
-                                <h4 class="font-medium text-gray-900 group-hover:text-blue-600">Lorem Ipsum is simply dummy</h4>
-                                <p class="text-sm text-gray-500">10 Jan, 2024</p>
-                            </div>
-                        </a>
-                        <a href="#" class="flex gap-4 group">
-                            <img src="/api/placeholder/80/80" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
-                            <div>
-                                <h4 class="font-medium text-gray-900 group-hover:text-blue-600">Lorem Ipsum is simply dummy</h4>
-                                <p class="text-sm text-gray-500">10 Jan, 2024</p>
-                            </div>
-                        </a>
-                        <a href="#" class="flex gap-4 group">
-                            <img src="/api/placeholder/80/80" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
-                            <div>
-                                <h4 class="font-medium text-gray-900 group-hover:text-blue-600">Lorem Ipsum is simply dummy</h4>
-                                <p class="text-sm text-gray-500">10 Jan, 2024</p>
-                            </div>
-                        </a>
-                        <a href="#" class="flex gap-4 group">
-                            <img src="/api/placeholder/80/80" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
-                            <div>
-                                <h4 class="font-medium text-gray-900 group-hover:text-blue-600">Lorem Ipsum is simply dummy</h4>
-                                <p class="text-sm text-gray-500">10 Jan, 2024</p>
-                            </div>
-                        </a>
-                        <a href="#" class="flex gap-4 group">
-                            <img src="/api/placeholder/80/80" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
-                            <div>
-                                <h4 class="font-medium text-gray-900 group-hover:text-blue-600">Lorem Ipsum is simply dummy</h4>
-                                <p class="text-sm text-gray-500">10 Jan, 2024</p>
-                            </div>
-                        </a>
-                        <a href="#" class="flex gap-4 group">
-                            <img src="/api/placeholder/80/80" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
-                            <div>
-                                <h4 class="font-medium text-gray-900 group-hover:text-blue-600">Lorem Ipsum is simply dummy</h4>
-                                <p class="text-sm text-gray-500">10 Jan, 2024</p>
-                            </div>
-                        </a>
-                        <a href="#" class="flex gap-4 group">
-                            <img src="/api/placeholder/80/80" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
-                            <div>
-                                <h4 class="font-medium text-gray-900 group-hover:text-blue-600">Lorem Ipsum is simply dummy</h4>
-                                <p class="text-sm text-gray-500">10 Jan, 2024</p>
-                            </div>
-                        </a>
+                        <!-- Add more detail items as needed -->
                     </div>
                 </div>
 
@@ -221,5 +169,15 @@
             </aside>
         </div>
     </main>
+    <script src="script.js"></script>
+    <script>// Navbar responsive
+        function Menu(e) {
+            let list = document.querySelector('ul');
+            e.name = e.name === 'menu-outline' ? 'close-outline' : 'menu-outline';
+            list.classList.toggle('top-[80px]');
+            list.classList.toggle('opacity-100');
+        }</script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
 </body>
 </html>

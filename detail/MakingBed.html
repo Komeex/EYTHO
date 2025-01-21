@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  </head>
+  <body class="text-">
+    <header class="bg-white fixed top-0 left-0 w-full shadow-lg z-50">
+      <nav class="md:flex md:items-center md:justify-around py-4 md:h-24 w-full">
+          <div class="flex items-center justify-between font-semibold text-black mx-4 md:mx-0">
+              <img class="w-[11.5rem]" src="../assets/logo-eytho-2026.png" alt="Logo Ezzy" />
+              <span class="text-3xl md:hidden">
+                  <ion-icon class="cursor-pointer" name="menu-outline" onclick="Menu(this)"></ion-icon>
+              </span>
+          </div>
+          <ul class="md:flex md:items-center gap-0 lg:gap-8 md:gap-0 md:static fixed bg-white w-full left-0 md:w-auto pl-4 md:pl-0
+           md:opacity-100 opacity-0 top-[-400px] transition-all ease-in-out  duration-500">
+              <li class="my-6 md:my-0">
+                  <a href="../index.html" class="underline1 hover:text-[#FF6600] duration-300 block md:inline-block">Home</a>
+              </li>
+              <li class="my-6 md:my-0 md:ml-4">
+                  <a href="../index.html#about" class="underline1 hover:text-[#FF6600] duration-300 block md:inline-block">About us</a>
+              </li>
+
+           <!-- Dropdown -->
+              <li class="relative my-6 md:my-0 md:ml-4">
+                <a href="../index.html#competition" class="group underline1 hover:text-[#FF6600] duration-300 block md:inline-block">Competition</a>
+               
+                  </li>
+                    
+
+              <li class="my-6 md:my-0 md:ml-4">
+                  <a href="../index.html#location" class="underline1 hover:text-[#FF6600] duration-300 block md:inline-block">Location</a>
+              </li>
+              <li class="my-6 md:my-0 md:ml-4">
+                  <a href="../index.html#contact" class="underline1 hover:text-[#FF6600] duration-300 block md:inline-block">Contact us</a>
+              </li>
+              <li class="md:hidden pb-10">
+                  <button class="bg-[#FF6600] rounded px-4 py-2 hover:scale-110 duration-300 text-white">
+                      Pendaftaran
+                  </button>
+              </li>
+          </ul>
+          <div class="hidden md:block">
+            <button class="bg-[#FF6600] rounded px-4 py-2 hover:scale-110 duration-300 text-white">
+              Pendaftaran
+          </button>
+          </div>
+      </nav>
+  </header>
+
+  <div class="relative w-full h-[400px] mt-16 md:mt-24 overflow-hidden">
+    <!-- Background with gradient overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-400">
+        <!-- Optional decorative elements -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-full h-full bg-[url('/api/placeholder/1920/400')] bg-cover bg-center"></div>
+        </div>
+    </div>
+    
+    <!-- Content container -->
+    <div class="relative container mx-auto px-4 h-full flex flex-col justify-center">
+        <!-- Breadcrumb -->
+        <nav class="mb-4">
+            <ol class="flex items-center space-x-2 text-sm md:text-base">
+                <li><a href="../index.html" class="text-white hover:text-orange-200 transition-colors">Home</a></li>
+                <li><span class="text-white mx-2">/</span></li>
+                <li class="text-orange-200 font-medium">Housekeeping Competition</li>
+            </ol>
+        </nav>
+        
+        <!-- Title -->
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
+            Speech Competition
+        </h1>
+        
+        <!-- Optional subtitle or description -->
+        <p class="text-lg md:text-xl text-orange-50 max-w-2xl">
+            Showcase your speaking skills and compete with the best speakers from around the region
+        </p>
+    </div>
+</div>
+
+<!-- Main Content -->
+<main class="container mx-auto px-4 py-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Article -->
+        <article class="lg:col-span-2 bg-white p-6 rounded-lg shadow-sm">
+            <img src="../assets/spech.jpg" alt="Blog Post Hero" class="w-full h-[200px] md:h-[400px] object-cover rounded-lg mb-8">
+            
+            <div class="mb-6">
+                <div class="flex flex-wrap gap-4 text-gray-600 text-sm md:text-base">
+                    <span class="flex items-center gap-2">
+                        <i class="far fa-calendar"></i>
+                        14 Jan, 2025
+                    </span>
+                    <span class="flex items-center gap-2">
+                        <i class="far fa-user"></i>
+                        Ezzy  
+                    </span>
+                </div>
+            </div>
+
+            <div class="prose max-w-none">
+                <p class="text-gray-700 mb-6">
+                    The competition will consist of two rounds; Prepared Speech and Impromptu Speech.
+                </p>
+                <p class="text-gray-700 mb-6">
+                    In the first round (Prepared Speech), participants must present their ideas in a standing position regarding the topic given using TedTalks style. Each participant is allowed to perform within 5-7 minutes.
+                </p>
+                <p class="text-gray-700">
+                    After the Prepared Speech, all participants must join the Impromptu Speech based on the lottery topic.
+                </p>
+            </div>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="lg:col-span-1 space-y-8">
+            <!-- Categories -->
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h3 class="text-xl font-bold mb-4">Category</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-2 text-gray-700 hover:text-orange-600">
+                        <i class="fas fa-circle text-orange-500 text-xs"></i>
+                        <a href="#">English Competition</a>
+                    </li>
+                </ul>
+            </div>
+        
+            <!-- Competitions with Tabs -->
+            <div class="bg-white rounded-lg shadow-sm">
+                <div class="border-b">
+                    <div class="flex">
+                        <button onclick="switchTab('academic')" class="tab-button px-4 py-3 text-sm font-medium text-gray-600 hover:text-orange-600 border-b-2 border-transparent active" data-tab="academic">
+                            Category SMA/SMK
+                        </button>
+                        <button onclick="switchTab('hospitality')" class="tab-button px-4 py-3 text-sm font-medium text-gray-600 hover:text-orange-600 border-b-2 border-transparent" data-tab="hospitality">
+                            Category SMA/SMK & UMUM/Hotlier
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Academic Competitions Tab -->
+                <div id="academic" class="tab-content p-6 max-h-[600px] overflow-y-auto">
+                    <h3 class="text-xl font-bold mb-4">SMA / SMK Kategori</h3>
+                    <div class="space-y-4">
+                        <!-- Competition Items -->
+                        <a href="SpeechCompetition.html" class="flex gap-4 group hover:bg-orange-50 p-2 rounded-lg transition-colors">
+                            <img src="../assets/detail/spech.jpg" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
+                            <div>
+                                <h4 class="font-medium text-gray-900 group-hover:text-orange-600">Speech Competition</h4>
+                                <p class="text-sm text-gray-500">13 Jan, 2025</p>
+                            </div>
+                        </a>
+                        <a href="EssayPoster.html" class="flex gap-4 group hover:bg-orange-50 p-2 rounded-lg transition-colors">
+                            <img src="../assets/detail/Esayposter.jpg" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
+                            <div>
+                                <h4 class="font-medium text-gray-900 group-hover:text-orange-600">Essay Poster Competition</h4>
+                                <p class="text-sm text-gray-500">13 Jan, 2025</p>
+                            </div>
+                        </a>
+                        <a href="BusinessPlanCompetition.html" class="flex gap-4 group hover:bg-orange-50 p-2 rounded-lg transition-colors">
+                            <img src="../assets/detail/Business Plan Competition.jpg" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
+                            <div>
+                                <h4 class="font-medium text-gray-900 group-hover:text-orange-600">Business Plan Competition</h4>
+                                <p class="text-sm text-gray-500">14 Jan, 2025</p>
+                            </div>
+                        </a>
+                        <a href="E-Sport Pro.html" class="flex gap-4 group hover:bg-orange-50 p-2 rounded-lg transition-colors">
+                            <img src="../assets/detail/E-Sport Pro Evolution Soccer (PES) Competition.jpg" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
+                            <div>
+                                <h4 class="font-medium text-gray-900 group-hover:text-orange-600">E-Sport Pro Evolution Soccer (PES) Competition</h4>
+                                <p class="text-sm text-gray-500">14 Jan, 2025</p>
+                            </div>
+                        </a>
+                        <a href="WebCraft.html" class="flex gap-4 group hover:bg-orange-50 p-2 rounded-lg transition-colors">
+                            <img src="../assets/detail/WebCraft – Web Design Competition.jpg" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
+                            <div>
+                                <h4 class="font-medium text-gray-900 group-hover:text-orange-600">WebCraft – Web Design Competition</h4>
+                                <p class="text-sm text-gray-500">14 Jan, 2025</p>
+                            </div>
+                        </a>
+                        <a href="MobilePhotography.html" class="flex gap-4 group hover:bg-orange-50 p-2 rounded-lg transition-colors">
+                            <img src="../assets/detail/Mobile Photography Contest.jpg" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
+                            <div>
+                                <h4 class="font-medium text-gray-900 group-hover:text-orange-600">Mobile Photography Contest</h4>
+                                <p class="text-sm text-gray-500">14 Jan, 2025</p>
+                            </div>
+                        </a>
+                        <a href="Reels Competition.html" class="flex gap-4 group hover:bg-orange-50 p-2 rounded-lg transition-colors">
+                            <img src="../assets/detail/Reels Competition.jpg" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
+                            <div>
+                                <h4 class="font-medium text-gray-900 group-hover:text-orange-600">Reels Competition</h4>
+                                <p class="text-sm text-gray-500">14 Jan, 2025</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        
+                
+                <div id="hospitality" class="tab-content hidden p-6 max-h-[600px] overflow-y-auto">
+                    <h3 class="text-xl font-bold mb-4">Category SMA/SMK &amp; UMUM/Hotlier  </h3>
+                    <div class="space-y-4">
+                        <a href="Arttowel.html" class="flex gap-4 group hover:bg-orange-50 p-2 rounded-lg transition-colors">
+                            <img src="../assets/detail/Creative Towel Arts Competition.jpg" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
+                            <div>
+                                <h4 class="font-medium text-gray-900 group-hover:text-orange-600">Creative Towel Arts Competition</h4>
+                                <p class="text-sm text-gray-500">14 Jan, 2025</p>
+                            </div>
+                        </a>
+                        <a href="CreativeMakingBed.html" class="flex gap-4 group hover:bg-orange-50 p-2 rounded-lg transition-colors">
+                            <img src="../assets/detail/Creative Making Bed Competition.jpg" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
+                            <div>
+                                <h4 class="font-medium text-gray-900 group-hover:text-orange-600">Creative Making Bed Competition</h4>
+                                <p class="text-sm text-gray-500">14 Jan, 2025</p>
+                            </div>
+                        </a>
+                        <a href="Barista.html" class="flex gap-4 group hover:bg-orange-50 p-2 rounded-lg transition-colors">
+                            <img src="../assets/detail/Barista Open Service Competition.jpg" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
+                            <div>
+                                <h4 class="font-medium text-gray-900 group-hover:text-orange-600">Barista Open Service Competition</h4>
+                                <p class="text-sm text-gray-500">14 Jan, 2025</p>
+                            </div>
+                        </a>
+                        <a href="MixoFlair.html" class="flex gap-4 group hover:bg-orange-50 p-2 rounded-lg transition-colors">
+                            <img src="../assets/detail/MixoFlair & Accuration Competition.jpg" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
+                            <div>
+                                <h4 class="font-medium text-gray-900 group-hover:text-orange-600">MixoFlair & Accuration Competition</h4>
+                                <p class="text-sm text-gray-500">14 Jan, 2025</p>
+                            </div>
+                        </a>
+                        <a href="CreativeTableSetup.html" class="flex gap-4 group hover:bg-orange-50 p-2 rounded-lg transition-colors">
+                            <img src="../assets/detail/Creative Table Setup Competition.jpg" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
+                            <div>
+                                <h4 class="font-medium text-gray-900 group-hover:text-orange-600">Creative Table Setup Competition</h4>
+                                <p class="text-sm text-gray-500">14 Jan, 2025</p>
+                            </div>
+                        </a>
+                        <a href="ReceptionistSMA-SMK.html" class="flex gap-4 group hover:bg-orange-50 p-2 rounded-lg transition-colors">
+                            <img src="../assets/detail/Receptionist Competition – SMASMK.jpg" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
+                            <div>
+                                <h4 class="font-medium text-gray-900 group-hover:text-orange-600">Receptionist Competition – SMA/SMK</h4>
+                                <p class="text-sm text-gray-500">14 Jan, 2025</p>
+                            </div>
+                        </a>
+                        <a href="ReceptionistCompetition-Umum.html" class="flex gap-4 group hover:bg-orange-50 p-2 rounded-lg transition-colors">
+                            <img src="../assets/detail/Receptionist Competition – SMASMK.jpg" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
+                            <div>
+                                <h4 class="font-medium text-gray-900 group-hover:text-orange-600">Receptionist Competition – Hotelier/Umum</h4>
+                                <p class="text-sm text-gray-500">14 Jan, 2025</p>
+                            </div>
+                        </a>
+                        <a href="TourGuiding.html" class="flex gap-4 group hover:bg-orange-50 p-2 rounded-lg transition-colors">
+                            <img src="../assets/detail/Tour Guiding Competition.jpg" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
+                            <div>
+                                <h4 class="font-medium text-gray-900 group-hover:text-orange-600">Tour Guiding Competition</h4>
+                                <p class="text-sm text-gray-500">14 Jan, 2025</p>
+                            </div>
+                        </a>
+                        <a href="BlackBoxCompetition.html" class="flex gap-4 group hover:bg-orange-50 p-2 rounded-lg transition-colors">
+                            <img src="../assets/detail/Black Box Competition.jpg" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
+                            <div>
+                                <h4 class="font-medium text-gray-900 group-hover:text-orange-600">Black Box Competition</h4>
+                                <p class="text-sm text-gray-500">14 Jan, 2025</p>
+                            </div>
+                        </a>
+                        <a href="Fruit Carving.html" class="flex gap-4 group hover:bg-orange-50 p-2 rounded-lg transition-colors">
+                            <img src="../assets/detail/Fruit Carving Competition.jpg" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
+                            <div>
+                                <h4 class="font-medium text-gray-900 group-hover:text-orange-600">Fruit Carving Competition</h4>
+                                <p class="text-sm text-gray-500">14 Jan, 2025</p>
+                            </div>
+                        </a>
+                        <a href="MainCourse.html" class="flex gap-4 group hover:bg-orange-50 p-2 rounded-lg transition-colors">
+                            <img src="../assets/detail/Main Course Competition.jpg" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
+                            <div>
+                                <h4 class="font-medium text-gray-900 group-hover:text-orange-600">Main Course Competition</h4>
+                                <p class="text-sm text-gray-500">14 Jan, 2025</p>
+                            </div>
+                        </a>
+                        <a href="DessertCompetition.html" class="flex gap-4 group hover:bg-orange-50 p-2 rounded-lg transition-colors">
+                            <img src="../assets/detail/Dessert Competition.jpg" alt="Post thumbnail" class="w-20 h-20 object-cover rounded">
+                            <div>
+                                <h4 class="font-medium text-gray-900 group-hover:text-orange-600">Dessert Competition</h4>
+                                <p class="text-sm text-gray-500">14 Jan, 2025</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <button id="scrollTop" class="fixed bottom-8 right-8 bg-orange-500 text-white rounded-full p-3 hidden hover:bg-orange-600 transition-colors shadow-lg">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </aside>
+    </div>
+</main>
+
+  <footer class="bg-orange-500 py-12 mt-24">
+    <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+            <!-- Social Media -->
+            <div class="flex flex-col gap-6 items-center">
+                <img class="w-[11.5rem] md:mb-0 md-4" src="../assets/logo putih.png" alt="Logo">
+                <div class="flex flex-row md:flex-col items-center gap-8 md:gap-4">
+                    <a href="#" class="text-white hover:text-gray-200 transition-colors duration-300">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-gray-200 transition-colors duration-300">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-gray-200 transition-colors duration-300">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-gray-200 transition-colors duration-300">
+                        <i class="fab fa-youtube fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Address & Contact -->
+            <div id="contact" class="text-white flex flex-col items-center md:items-start text-center md:text-left">
+                <h3 class="text-xl font-bold mb-6">Address</h3>
+                <div class="flex items-start gap-3 mb-4">
+                    <i class="fas fa-location-dot mt-1"></i>
+                    <p>Jl. Hayam Wuruk No.199,<br>Kota Denpasar, Bali</p>
+                </div>
+
+                <h3 class="text-xl font-bold mb-6 mt-8">Contact</h3>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p class="font-medium">Ms. Ayu Widya</p>
+                            <p>+62 878 5765 0491</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p class="font-medium">Ms. Gita Wahyuni</p>
+                            <p>+62 878 6255 8156</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p class="font-medium">Ms. Mita</p>
+                            <p>+62 877-6123-8201</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 mt-4">
+                        <i class="fas fa-envelope"></i>
+                        <p>creative@ezzy-group.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Explore -->
+            <div class="text-white flex flex-col items-center md:items-start">
+                <h3 class="text-xl font-bold mb-6">Explore</h3>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="../index.html" class="group hover:text-gray-200 transition-colors duration-300 flex items-center gap-2">
+                            <i class="fas fa-chevron-right group-hover:rotate-0 -rotate-180 text-sm duration-300"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../index.html#about" class="group hover:text-gray-200 transition-colors duration-300 flex items-center gap-2">
+                            <i class="fas fa-chevron-right group-hover:rotate-0 -rotate-180 text-sm duration-300"></i>
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../index.html#competition" class="group hover:text-gray-200 transition-colors duration-300 flex items-center gap-2">
+                            <i class="fas fa-chevron-right group-hover:rotate-0 -rotate-180 text-sm duration-300"></i>
+                            Competition
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../index.html#contact" class="group hover:text-gray-200 transition-colors duration-300 flex items-center gap-2">
+                            <i class="fas fa-chevron-right group-hover:rotate-0 -rotate-180 text-sm duration-300"></i>
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../index.html#location" class="group hover:text-gray-200 transition-colors duration-300 flex items-center gap-2">
+                            <i class="fas fa-chevron-right group-hover:rotate-0 -rotate-180 text-sm duration-300"></i>
+                            Location
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Map -->
+            <div id="location" class="w-full flex justify-center md:block">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.2025791324087!2d115.21914621478385!3d-8.672426393766087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd240f5b0bdbed9%3A0x2409d42495859781!2sJl.%20Hayam%20Wuruk%20No.199%2C%20Sumerta%20Kelod%2C%20Kec.%20Denpasar%20Tim.%2C%20Kota%20Denpasar%2C%20Bali%2080239!5e0!3m2!1sid!2sid!4v1624859655789!5m2!1sid!2sid" 
+                    class="w-full max-w-md md:max-w-none h-[392px] rounded-lg shadow-lg"
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="mt-12 pt-8 border-t border-white/20">
+            <p class="text-center text-white">© 2024 EYTHO 2025. All rights reserved. Created with ❤️ for better education.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="../script.js"> </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.158.0/three.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
